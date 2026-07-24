@@ -17,6 +17,8 @@ on:
 jobs:
   build:
 
+    if: github.repository == 'jmdns/jmdns'
+
     name: JDK ${{ matrix.java }} on ${{ matrix.os }}
     strategy:
       fail-fast: false
